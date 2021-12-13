@@ -1,0 +1,28 @@
+.showside-wrapper {
+  border-radius: 6px;
+  padding: 50px;
+  grid-column: 5 / span 8;
+  grid-row: 1/8;
+}
+.recipes-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.recipe-card {
+  margin-bottom: 20px;
+}
+.recipe-card p {
+  text-align: center;
+  font-size: 20px;
+}
+.pagination-part {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.pagination-part p {
+  font-size: 18px;
+}
