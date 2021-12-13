@@ -18,7 +18,7 @@ body {
   line-height: 1.7;
 }
 .App {
-  padding: 50px;
+  padding: 30px;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,7 +32,8 @@ body {
   align-items: center;
 }
 h1 {
-  margin-bottom: 25px;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 a {
   text-decoration: none;
@@ -48,7 +49,6 @@ button {
   border-radius: 6px;
   width: 100px;
   height: 40px;
-  margin-left: 70%;
   background-color: skyblue;
 }
 .btn:hover {

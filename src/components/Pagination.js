@@ -13,7 +13,6 @@ export default function Pagination({ recipes }) {
     color: darkTheme ? "rgb(215, 215, 215)" : "rgb(36, 36, 36)",
   };
 
-  console.log(currentPage);
   useEffect(() => {
     setPageNums([]);
     if (recipes.length > 9) {
@@ -45,15 +44,14 @@ export default function Pagination({ recipes }) {
           8 * (currentPage - 1) + pageNums[currentPage - 1]
         )
         .map((recipe) => (
-          <Link key={recipe.idMeal} to={`/recipe/${recipe.idMeal}`}>
-            <div className="recipe-card">
+          <Link
+            className="recipe-card"
+            key={recipe.idMeal}
+            to={`/recipe/${recipe.idMeal}`}
+          >
+            <div>
               <div className="img-wrapper">
-                <img
-                  width="295px"
-                  height="295px"
-                  src={recipe.strMealThumb}
-                  alt={recipe.strMeal}
-                />
+                <img src={recipe.strMealThumb} alt={recipe.strMeal} />
               </div>
               <p style={ThemeStyles}>
                 {recipe.strMeal.length > 25

@@ -9,27 +9,29 @@
   border-radius: 6px;
   box-shadow: 0px 0px 12px #aaa, -0px -0px 12px #fff;
   margin: 0px 25px 0px 0px;
-  padding: 35px 15px 15px 15px;
+  padding: 25px;
 }
 
 .searchside-wrapper form {
   display: flex;
   flex-direction: column;
+  gap: 2%;
+  align-items: flex-end;
 }
 
 .searchside-wrapper label {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  gap: 5%;
-  font-size: 20px;
-  padding-right: 10%;
+  gap: 3%;
+  font-size: 17px;
   margin-bottom: 30px;
 }
 
 .searchside-wrapper label select {
-  font-size: 18px;
-  height: 30px;
-  width: 275px;
+  font-size: 16px;
+  height: 25px;
+  width: 70%;
 }
 
 .searchside-wrapper label input {
@@ -37,4 +39,17 @@
   padding-left: 5px;
   height: 30px;
   width: 275px;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-wrapper {
+    display: block;
+  }
+  .searchside-wrapper {
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .searchside-wrapper label select {
+    width: 60%;
+  }
 }

@@ -76,12 +76,7 @@ export default function RecipePage() {
               <p>{recipeInfos.strArea}</p>
             </div>{" "}
             <div className="image-wrapper">
-              <img
-                src={recipeInfos.strMealThumb}
-                width="500px"
-                height="500px"
-                alt={recipeInfos.strMeal}
-              />
+              <img src={recipeInfos.strMealThumb} alt={recipeInfos.strMeal} />
             </div>
           </div>
 

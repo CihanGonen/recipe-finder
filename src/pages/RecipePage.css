@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-around;
 }
-.thumb {
+.thumb .image-wrapper img {
   width: 500px;
 }
 .headings {
@@ -37,4 +37,36 @@
   margin-left: 20px;
   width: 700px;
   font-size: 17px;
+}
+
+@media only screen and (max-width: 600px) {
+  .recipe-detail-wrapper {
+    padding: 30px 20px;
+  }
+  .recipe-details {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .thumb .image-wrapper img {
+    width: 100%;
+  }
+  .headings h2 {
+    font-size: 15px;
+  }
+  .headings p {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .ingredients {
+    margin: 0;
+    padding: 5px 50px;
+  }
+  .instructions {
+    margin: 0px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 17px;
+    width: 100%;
+    font-size: 17px;
+  }
 }

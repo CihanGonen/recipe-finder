@@ -6,7 +6,7 @@ function App() {
   return (
     <ThemeProvider>
       <div>
-        <BrowserRouter>
+        <BrowserRouter basename={"recipe-finder"}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/recipe/:id" element={<RecipePage />} />

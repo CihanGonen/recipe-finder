@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div style={themeStyles} className="App">
       <div className="header-wrapper">
-        <h1>Search Recipes and Find the Meal to feed your stomach</h1>
+        <h1>Search Recipes</h1>
 
         <button onClick={toggleTheme}>
           {darkTheme ? (
