@@ -35,10 +35,10 @@
 }
 
 .searchside-wrapper label input {
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 5px;
-  height: 30px;
-  width: 275px;
+  height: 25px;
+  width: 70%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -50,6 +50,9 @@
     margin-bottom: 5%;
   }
   .searchside-wrapper label select {
+    width: 60%;
+  }
+  .searchside-wrapper label input {
     width: 60%;
   }
 }

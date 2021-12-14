@@ -32,18 +32,13 @@ export default function Results({ searchParam }) {
         );
         const values = await res.json();
         setRecipes(values.meals);
+        setLoading(false);
       } catch (err) {
         console.log(err);
       }
     };
     getRecipes();
   }, [searchParam]);
-
-  useEffect(() => {
-    if (recipes) {
-      setLoading(false);
-    }
-  }, [recipes]);
 
   return (
     <div style={themeStyles} className="showside-wrapper">
