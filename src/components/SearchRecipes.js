@@ -60,6 +60,7 @@ export default function SearchRecipes() {
 
   const onFormSubmit = (e) => {
     e.preventDefault();
+    console.log("submit", searchBy, selectedCategory);
     let searchWord =
       searchBy === "category"
         ? selectedCategory
@@ -74,6 +75,7 @@ export default function SearchRecipes() {
   useEffect(() => {
     getCategories();
     getAreas();
+    // if searched before and stored in local storage
     let searchByFromStorage = localStorage.getItem("searchBy");
     let searchWordFromStorage = localStorage.getItem("searchWord");
     if (searchByFromStorage && searchWordFromStorage) {
@@ -99,6 +101,7 @@ export default function SearchRecipes() {
               onChange={(e) => setSearchBy(e.target.value)}
               onBlur={(e) => setSearchBy(e.target.value)}
             >
+              <option />
               {searchByOptions.map((searchByOption) => (
                 <option key={searchByOption} value={searchByOption}>
                   {searchByOption}
@@ -115,6 +118,7 @@ export default function SearchRecipes() {
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 onBlur={(e) => setSelectedCategory(e.target.value)}
               >
+                <option />
                 {categories.map((category) => (
                   <option key={category} value={category}>
                     {category}
@@ -131,6 +135,7 @@ export default function SearchRecipes() {
                 onChange={(e) => setSelectedArea(e.target.value)}
                 onBlur={(e) => setSelectedArea(e.target.value)}
               >
+                <option />
                 {areas.map((area) => (
                   <option key={area} value={area}>
                     {area}

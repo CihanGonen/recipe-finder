@@ -16,7 +16,6 @@ export default function Results({ searchParam }) {
       ? "0px 0px 12px black, -0px -0px 12px rgb(52, 55, 54)"
       : "0px 0px 12px #aaa, -0px -0px 12px #fff",
   };
-
   useEffect(() => {
     const getRecipes = async () => {
       setLoading(true);

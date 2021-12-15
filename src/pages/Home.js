@@ -15,8 +15,12 @@ export default function Home() {
     <div style={themeStyles} className="App">
       <div className="header-wrapper">
         <h1>Search Recipes</h1>
-
-        <button onClick={toggleTheme}>
+        <button
+          onClick={() => {
+            toggleTheme();
+            localStorage.setItem("theme", String(!darkTheme));
+          }}
+        >
           {darkTheme ? (
             <img src={SunLight} alt="light-mode toggle" />
           ) : (
